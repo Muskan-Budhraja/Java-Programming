@@ -80,19 +80,11 @@ public class BinarySearchTree
 	           if(t.data==data) return true; //if data is found in the node return true
 	           else if(data<t.data)     
 	             {
-	                 if(t.left!=null && t.left.data==data) //if left of node is not null and 
-	                 {                                     //left of the node contains the data 
-	                     return true;                      //return true
-	                 }
-	                 else t=t.left;                        //else go to left node
+	                   else t=t.left;                        //else go to left node
 	             }
 	             else
 	             {
-	                 if(t.right!=null && t.right.data==data) //if right node is not null and
-	                 {                                       //right of the node contains the data
-	                     return true;                        //return  true
-	                 }
-	                 else t=t.right;                        //else go to the right node
+	                  t=t.right;                        //else go to the right node
 	             }
             }
             return false;
